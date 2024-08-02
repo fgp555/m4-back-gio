@@ -1,0 +1,38 @@
+### 
+POST  https://gio.1rodemayo.com/users/register
+Content-Type: application/json
+
+{
+    "name": "User123s",
+    "email": "User123s@mail.com",
+    "password": "P4ssW0rd",
+    "address": "User123s",
+    "phone": "12341234"
+}
+
+### 
+POST  https://gio.1rodemayo.com/users/login
+Content-Type: application/json
+
+{
+    "email": "User123s@mail.com",
+    "password": "P4ssW0rd"
+}
+
+### 
+GET https://gio.1rodemayo.com/users/orders
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjU2OTk4NH0.C20H1cORnsWgiPPW51POA2_AQf9FEmBtGHWGKhuRvrs
+
+### 
+POST https://gio.1rodemayo.com/orders/
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjU2OTk4NH0.C20H1cORnsWgiPPW51POA2_AQf9FEmBtGHWGKhuRvrs
+
+{
+  "userId": 1,
+  "products": [1,2,3]
+}
+
+
+### 
+GET https://gio.1rodemayo.com/products

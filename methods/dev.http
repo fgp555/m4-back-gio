@@ -1,0 +1,38 @@
+### 
+POST  http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "name": "string",
+    "email": "string",
+    "password": "string",
+    "address": "string",
+    "phone": "string"
+}
+
+### 
+POST  http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "string",
+    "password": "string"
+}
+
+### 
+GET http://localhost:3000/users/orders
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxODc2NTg1N30.TBuPUQBEYM8E_FoWjuuOR4I9AmCX8DNrr_T10fxpeHE
+
+### 
+POST http://localhost:3000/orders/
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxODc2NTg1N30.TBuPUQBEYM8E_FoWjuuOR4I9AmCX8DNrr_T10fxpeHE
+
+{
+  "userId": 1,
+  "products": [1,2,3]
+}
+
+
+### 
+GET http://localhost:3000/products
